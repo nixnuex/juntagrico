@@ -9,7 +9,7 @@ class DepotDao:
 
     @staticmethod
     def all_depots_ordered():
-        return Depot.objects.all()
+        return Depot.objects.all().order_by('sort_order')
 
     @staticmethod
     def all_visible_depots():
